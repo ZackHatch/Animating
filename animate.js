@@ -9,7 +9,7 @@ function frame() {
     if (xpos > 1380 || xpos < 0) {
         xstep = -xstep;
     }
-     if (ypos > 500 || ypos < 0) {
+    if (ypos > 500 || ypos < 0) {
         ystep = -ystep;
     }
 
@@ -19,7 +19,7 @@ function frame() {
     box.style.left = xpos + 'px';
 }
 var thing = document.getElementById("thing");
-var container = document.getElementById("container");
+var container = document.getElementById("Trump");
 var mousecoords = document.getElementById("mousecoords");
 
 container.addEventListener("mousemove", printMouseCoords);
@@ -34,15 +34,15 @@ container.addEventListener("click", moveThing);
 
 function moveThing(event) {
     var xPosition = event.clientX - container.getBoundingClientRect().left - (thing.clientWidth / 2);
-	var yPosition = event.clientY - container.getBoundingClientRect().top - (thing.clientHeight / 2);
-	// in case of a wide border, the boarder-width needs to be considered in the formula above
-	thing.style.left = xPosition + "px";
-	thing.style.top = yPosition + "px";
+    var yPosition = event.clientY - container.getBoundingClientRect().top - (thing.clientHeight / 2);
+    // in case of a wide border, the boarder-width needs to be considered in the formula above
+    thing.style.left = xPosition + "px";
+    thing.style.top = yPosition + "px";
 }
 window.addEventListener("keypress", changeThingColor);
 
 function changeThingColor(event) {
-    if (event.key === "b"){
+    if (event.key === "b") {
         thing.style.background = "blue";
     } else if (event.key === "o") {
         thing.style.background = "orange";

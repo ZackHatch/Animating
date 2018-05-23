@@ -14,12 +14,12 @@ h1 {
 }
 
 #yeet {
-position: absolute;
+    position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-    animation: transparent 3s linear infinite;
+    animation: transparent 6s linear infinite;
 
 }
 
