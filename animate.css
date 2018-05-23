@@ -33,7 +33,7 @@ h1 {
 }
 
 #thing:active {
-    transform: scale(14);
+    transform: scale(3);
 }
 
 @keyframes color-change {
