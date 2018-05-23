@@ -23,6 +23,19 @@ h1 {
 
 }
 
+#thing {
+    position: absolute;
+    width: 200px;
+    height: 230px;
+
+    background-image: url("./download.jpg");
+    transition: transform .2s, background .5s, left .5s ease-in-out, top .5s ease-in-out;
+}
+
+#thing:active {
+    transform: scale(14);
+}
+
 @keyframes color-change {
     0% {
         color: red;

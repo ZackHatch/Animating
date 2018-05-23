@@ -39,14 +39,4 @@ function moveThing(event) {
     thing.style.left = xPosition + "px";
     thing.style.top = yPosition + "px";
 }
-window.addEventListener("keypress", changeThingColor);
 
-function changeThingColor(event) {
-    if (event.key === "b") {
-        thing.style.background = "blue";
-    } else if (event.key === "o") {
-        thing.style.background = "orange";
-    } else {
-        thing.style.background = "green";
-    }
-}
