@@ -1,0 +1,89 @@
+h1 {
+    position: relative;
+    top: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    animation: color-change 2s linear infinite;
+}
+
+#Trump {
+    height: 98vh;
+    background-image: url("./images.jpg");
+}
+
+#yeet {
+position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    animation: transparent 3s linear infinite;
+
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    14.28% {
+        color: orange;
+    }
+    28.57% {
+        color: yellow;
+    }
+    42.85% {
+        color: green;
+    }
+    57.13% {
+        color: turquoise;
+    }
+    71.41% {
+        color: blue;
+    }
+    85.69% {
+        color: indigo;
+    }
+    100% {
+        color: darkviolet;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes transparent {
+    0% {
+        opacity: .2;
+    }
+    20% {
+        opacity: .4;
+    }
+    35% {
+        opacity: .6;
+    }
+    40% {
+        opacity: 8;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: .8;
+    }
+    75% {
+        opacity: .6;
+    }
+    85% {
+        opacity: .4;
+    }
+    100% {
+        opacity: .2;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
