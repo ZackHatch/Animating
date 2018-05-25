@@ -40,3 +40,14 @@ function moveThing(event) {
     thing.style.top = yPosition + "px";
 }
 
+container.addEventListener("mousemove", moveThing);
+
+window.addEventListener("keypress", changeThing);
+
+function changeThing(event) {
+    if ( event.key === "b"){
+        thing.style.opacity = .5;
+    } if ( event.key === "n"){
+        thing.style.opacity = 1;
+    }
+}
